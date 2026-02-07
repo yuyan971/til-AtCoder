@@ -4,6 +4,23 @@ use std::collections::VecDeque;
 //use std::collections::HashMap;
 //use std::collections::HashSet;
 
+// fn main() { // サンプルケースは通っちゃったけど，ちゃんとTLEだった．
+//     input! {
+//         n:usize,
+//         mut a: [usize; n]
+//     }
+//     let mut sum: u128 = 0;
+//     for e in a {
+//         let mut mul: u128 = 1;
+//         for i in 1..=e {
+//             sum += 1 * mul;
+//             mul *= 10;
+//         }
+//     }
+
+//     println!("{}", sum);
+// }
+
 fn main() {
     input! {
         n: usize,
@@ -40,39 +57,4 @@ fn main() {
     for e in vec {
         print!("{}", e);
     }
-
-    // let mut ans: Vec<usize> = vec![1; a[0]];
-    // //    println!("{:?}", a);
-
-    // let mut first = 0;
-    // for e in a {
-    //     if first == 0 {
-    //         first += 1;
-
-    //         continue;
-    //     }
-    //     //println!("{}", e);
-    //     for i in 0..e {
-    //         ans[i] += 1;
-    //     }
-    // }
-
-    // for i in 0..ans.len() {
-    //     if ans[i] >= 10 {
-    //         ans[i] = 0;
-    //         ans[i + 1] += 1;
-    //     }
-    // }
-
-    // ans.reverse();
-    // for e in ans {
-    //     print!("{}", e);
-    // }
-
-    //let mut yes =
-    //let str: String = s.iter().collect(); // Vec<Char> To String
-    //println!("{:?}", ans);
-    //println!("{}", if yes { "Yes" } else { "No" });
-    //println!("Yes");
-    //println!("No");
 }
